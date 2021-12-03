@@ -3,10 +3,8 @@ package workshop.d1;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
-
 public class MainCart {
     public static void main(String[] args) {
-
         System.out.println("Welcome to your shopping cart");
         List<String> cart = new LinkedList<>();
 
@@ -45,7 +43,7 @@ public class MainCart {
                 if (i > cart.size()) {
                     System.out.println("Incorrect item index");
                     break;
-                }
+                } 
                 String removed = cart.remove(choice);
                 System.out.println(removed + " removed from cart");
             }
